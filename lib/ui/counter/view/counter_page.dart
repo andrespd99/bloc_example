@@ -56,7 +56,6 @@ class CounterText extends StatelessWidget {
     final theme = Theme.of(context);
 
     return BlocBuilder<CounterCubit, CounterState>(
-      buildWhen: (previous, current) => previous.status != current.status,
       builder: (context, state) {
         if (state.status.isFailure) {
           return const Text('Error');

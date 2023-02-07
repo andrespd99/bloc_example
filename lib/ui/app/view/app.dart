@@ -1,4 +1,5 @@
 import 'package:counter_app/l10n/l10n.dart';
+import 'package:counter_app/repositories/calendar_repository.dart';
 import 'package:counter_app/repositories/counter_repository.dart';
 import 'package:counter_app/ui/counter/counter.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,9 @@ class App extends StatelessWidget {
       providers: [
         RepositoryProvider(
           create: (context) => const AuthenticationRepository(),
+        ),
+        RepositoryProvider(
+          create: (context) => CalendarRepository(),
         ),
       ],
       child: MaterialApp(

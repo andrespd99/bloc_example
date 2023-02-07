@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:counter_app/ui/home/cubit/cubit.dart';
+import 'package:flutter/material.dart';
 
 /// {@template home_body}
 /// Body of the HomePage.
